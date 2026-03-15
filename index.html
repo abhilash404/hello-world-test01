@@ -7,8 +7,10 @@
 </head>
 <body>
     <h1 id="greeting">Hello World</h1>
+    <button id="btn" onclick="document.querySelector('#greeting').textContent = 'Goodbye World'">Click me</button>
     <script>
         console.log(document.querySelector("#greeting").textContent === "Hello World");
+        console.log(!!document.querySelector("#btn"));
     </script>
 </body>
 </html>
